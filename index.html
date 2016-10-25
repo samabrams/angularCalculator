@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body ng-app="myApp">
+    <div class="calcArea col-xs-6" ng-controller="calcController as cc">
+        <div class="screen col-xs-10">{{cc.evalString}}</div>
+        <button class="col-xs-3 numButton" ng-click="cc.numClicked()">7</button>
+        <button class="col-xs-3 numButton" ng-click="cc.numClicked()">8</button>
+        <button class="col-xs-3 numButton" ng-click="cc.numClicked()">9</button>
+        <button class="col-xs-3 numButton" ng-click="cc.numClicked()">4</button>
+        <button class="col-xs-3 numButton" ng-click="cc.numClicked()">5</button>
+        <button class="col-xs-3 numButton" ng-click="cc.numClicked()">6</button>
+        <button class="col-xs-3 numButton" ng-click="cc.numClicked()">1</button>
+        <button class="col-xs-3 numButton" ng-click="cc.numClicked()">2</button>
+        <button class="col-xs-3 numButton" ng-click="cc.numClicked()">3</button>
+        <button class="col-xs-3 numButton" ng-click="cc.numClicked()">0</button>
+        <button class="col-xs-3 pointButton" ng-click="cc.pointClicked()">.</button>
+        <button class="col-xs-3 numButton" ng-click="cc.numClicked()">(</button>
+        <button class="col-xs-3 opButton" ng-click="cc.opClicked()">-</button>
+        <button class="col-xs-3 opButton" ng-click="cc.opClicked()">+</button>
+        <button class="col-xs-3 numButton" ng-click="cc.numClicked()">)</button>
+        <button class="col-xs-3 opButton" ng-click="cc.opClicked()">*</button>
+        <button class="col-xs-3 opButton" ng-click="cc.opClicked()">/</button>
+        <button class="col-xs-3 equalsButton" ng-click="cc.eqClicked()">=</button>
+        <button class="col-xs-4 clears deleteButton" ng-click="cc.backSpace()">Delete</button>
+        <button class="col-xs-4 clears clearAllButton" ng-click="cc.clearAll()">Clear All</button>
+    </div>
+
+</body>
+</html>

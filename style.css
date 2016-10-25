@@ -1,0 +1,73 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url('stripesbg.png');
+    background-size: 100vw 100vh;
+}
+.calcArea {
+    height: 70vh;
+    position: relative;
+    top: 15vh;
+    left: 25vw;
+    background-color: #03A9F4;
+}
+.calcArea, .calcArea * {
+    font-family: Noto Sans;
+    font-size: 150%;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, .8);
+}
+.calcArea {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.56);
+}
+
+.screen {
+    height: 25%;
+    position: relative;
+    left: 8.33%;
+    margin: 2% 0;
+    background-color: #B3E5FC;
+    word-wrap: break-word;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+button{
+    position: relative;
+    height: 9%;
+    left: 11%;
+    margin: 0 3px 3px 3px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .6);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+button:hover {
+    background-color: rgba(0,0,0,.25);
+}
+button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+    background-color: rgba(0,0,0,.5);
+}
+button:focus {
+    outline: 0;
+}
+.clearAllButton {
+    left: 20%;
+}
+.numButton, .pointButton {
+    background-color: #01579B;
+    color: #4fc3f7;
+    opacity: 1;
+}
+.opButton {
+    background-color: #4fc3f7;
+    color: #01579B;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+.equalsButton {
+    background-color: #C51162;
+    color: #FF80AB;
+}
+.clears {
+    background-color: #FF80AB;
+    color: #C51162;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .25);
+}
